@@ -24,8 +24,9 @@
  > * Why is it important or interesting to you?
  >   * This project is interesting to us because Spotify wrapped is only released once per year and it would be useful to access it at any time. Furthermore, we want to add a mood/aesthetic board feature to the Spotify wrapped data which will allow us to express our feelings through music and images.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
+ >   * The languages we plan to use are React JS and HTML/CSS to code the website interface and also C++ for the backend data. The tools we will use are Git/GitHub, Figma, Spotify APIs, Pinterest APIs, and Google APIs.
  > * What will be the input/output of your project? What are the features that the project provides?
+ >   * This project will produce a summary of your Spotify activity that you can access all year round. The summary will include your top listener, most played songs, most played genres, how long you listened to music in minutes, and a pinterest mood/aesthetic board based on your listening. The input values will be your login credentials and Spotify API’s. 
  > 
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
