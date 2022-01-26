@@ -20,7 +20,7 @@
 
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
+ > Our project will be a website that gathers data using API’s from your Spotify history to display data from Spotify wrapped and a mood/aesthetic board of pictures from Pinterest or Google. 
  > * Why is it important or interesting to you?
  >   * This project is interesting to us because Spotify wrapped is only released once per year and it would be useful to access it at any time. Furthermore, we want to add a mood/aesthetic board feature to the Spotify wrapped data which will allow us to express our feelings through music and images.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
