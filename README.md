@@ -1,6 +1,3 @@
- > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
- > Prompt text is any lines beginning with "\>"
- > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # Moodify
  
  > Authors: \<[Harchet Singh](https://github.com/hsing067)\> \<[Gency Dela Torre](https://github.com/gen-cy)\> \<[Rachel Pham](https://github.com/phamrachel17)\> \<[Adrian Khor](https://github.com/akhor005)\>
@@ -25,7 +22,6 @@
  > ## Phase II
 
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
  > ![image](https://user-images.githubusercontent.com/97139147/153347192-5a64b9bc-c3e1-4d72-ad86-c8c24ed4cd5b.png)
  > The picture above depicts our UML diagram for the project. We will have separate classes for each panel of the Spotify statistics which all inherit from the original Panel class. Then, the MoodBoard class takes information from the most listened genre and uses that to generate a collage of pictures.
 
