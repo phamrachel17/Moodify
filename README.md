@@ -2,12 +2,9 @@
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # Moodify
- > Your author list below should include links to all members GitHub (remove existing author).
  
  > Authors: \<[Harchet Singh](https://github.com/hsing067)\> \<[Gency Dela Torre](https://github.com/gen-cy)\> \<[Rachel Pham](https://github.com/phamrachel17)\> \<[Adrian Khor](https://github.com/akhor005)\>
  
- > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list, start thinking about the features you will implement, what design patterns can help you implement them, and why. If you want to propose your own original idea, you will have to contact an instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). Your project needs to implement at least one design pattern iteratively, which you will have to justify in later phases.The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings. While Daily Scrums are not required we highly encourage you to practice them.
-
  
  > ## Expectations
  > * Incorporate **at least one** design pattern
@@ -21,31 +18,16 @@
 
 ## Project Description
  > Our project will be a website that gathers data using API’s from your Spotify history to display data from Spotify wrapped and a mood/aesthetic board of pictures from Pinterest or Google. 
- > * Why is it important or interesting to you?
  >   * This project is interesting to us because Spotify wrapped is only released once per year and it would be useful to access it at any time. Furthermore, we want to add a mood/aesthetic board feature to the Spotify wrapped data which will allow us to express our feelings through music and images.
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * The languages we plan to use are React JS and HTML/CSS to code the website interface and also C++ for the backend data. The tools we will use are Git/GitHub, Figma, Spotify APIs, Pinterest APIs, and Google APIs.
- > * What will be the input/output of your project? What are the features that the project provides?
  >   * This project will produce a summary of your Spotify activity that you can access all year round. The summary will include your top listener, most played songs, most played genres, how long you listened to music in minutes, and a pinterest mood/aesthetic board based on your listening. The input values will be your login credentials and Spotify API’s. 
- > 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
+ 
  > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to:
- > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Create smaller actionable development tasks as issues and assign them to team members. Place these in the `TODO` column.
- >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
- > * Schedule two check-ins using Calendly. You need to pick both time slots during your lab on week 8. Your entire team must be present for both check-ins.
- >   * The first check-in needs to be scheduled with your lab TA. During that meeting, you will discuss your project design/class diagram from phase II.
- >   * The second check-in should be scheduled with a reader. During that meeting you will discuss:
- >     * The tasks you are planning for the first sprint
- >     * How work will be divided between the team members
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
  > ![image](https://user-images.githubusercontent.com/97139147/153347192-5a64b9bc-c3e1-4d72-ad86-c8c24ed4cd5b.png)
+ > The picture above depicts our UML diagram for the project. We will have separate classes for each panel of the Spotify statistics which all inherit from the original Panel class. Then, the MoodBoard class takes information from the most listened genre and uses that to generate a collage of pictures.
 
  
  > ## Phase III
