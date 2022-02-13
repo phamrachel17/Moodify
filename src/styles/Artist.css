@@ -1,6 +1,10 @@
-.artist-panel {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: black;
-  }
+span.artist-panel {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
