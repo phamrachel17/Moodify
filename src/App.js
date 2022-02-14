@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import { RegisterButton } from './components/RegisterButton'
+
+
 
 function App() {
   return (
