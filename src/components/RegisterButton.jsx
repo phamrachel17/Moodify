@@ -2,20 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-/*SPOTIFY API AUTHENTICATION INFORMATION */
 
-/*var client_id = '1bb612d16c3343a99adf682d0670d9ff';
-var redirect_uri = 'http://localhost:3000/';
-
-
-
-var scope = 'user-read-private user-read-email';
-
-var url = 'https://accounts.spotify.com/authorize';
-url += '?response_type=token';
-url += '&client_id=' + encodeURIComponent(client_id);
-url += '&scope=' + encodeURIComponent(scope);
-url += '&redirect_uri=' + encodeURIComponent(redirect_uri);*/
 
 const CLIENT_ID = "1bb612d16c3343a99adf682d0670d9ff";
 const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize";
@@ -40,9 +27,9 @@ const Button = styled.button`
     text-align: center;
     text-decoration: none; 
     display: inline-block;
-    font-size: 64px;
+    font-size: 48px;
     font-color: black;
-    font-family: "Quicksand";
+    font-family: cousine;
     `
 
 
