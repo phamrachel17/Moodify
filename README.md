@@ -33,6 +33,10 @@
  >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
  >     * Why did you pick this pattern? And what feature did you implement with it?
  >     * How did the design pattern help you write better code?
+ We chose to use a structural design pattern, specifically composite patterns as most of our implemented classes serve as the foundation for other sibling class attributes. The way the classes interact is mostly through inheritance and composition, so we figured behavioral and creational design patterns would not be appropriate. In our application, songs, artists, and genres are all separate classes that inherit from Panel, but they all contain instances of one another. There are many potential features that can use this, but for this application, displaying a song will return its title, artist and genre. We may implement a feature that displays an artist’s top songs if we have time. Although the MoodBoard class does not inherit from the Panel class, its display elements are all subclasses of Panel which makes displaying easier.
+
+Although we’re not sure if this is necessary, we may implement a behavioral design (strategy design pattern) for creating common Panel functions that need to be altered slightly to fit each subclass. For example, a strategy pattern can be used on a display function, as displaying a song will show its title, artist and genre, but displaying an artist will only show their name and not their songs or any other attributes.
+
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
 > 
