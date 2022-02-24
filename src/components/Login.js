@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import "../styles/Login.css";
+import { RegisterButton } from './RegisterButton'
+
 
 class Login extends React.Component {
     constructor() {
@@ -22,6 +24,10 @@ class Login extends React.Component {
             <div id="login">
                 <div className="login-title">Moodify</div>
                 <div className="login-subtitle">What is your mood today?</div>
+                <div class="centered"><RegisterButton/></div>
+                
+                
+                
                 <div className="login-footer">Made By: Rachel Pham, Adrian Khor, Harchet Singh, and Gency Dela Torre</div>
             </div>
         );
