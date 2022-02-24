@@ -50,7 +50,7 @@ Although we’re not sure if this is necessary, we may implement a behavioral de
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ > To use Spotify Login Button, you need to run npm install --save styled-components
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
