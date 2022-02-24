@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Lato";
+    font-weight: 200;
+    font-display: fallback;
+    src: url("/src/fonts/Nunito-Regular.ttf") format("truetype");
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&family=Nunito&display=swap');
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 15%;
+    min-height: 100vh;
+  }
+
+  canvas {
+    width: 200px !important;
+  }
+
+  .login-title {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    font-size: 8vw;
+    padding-left: 5%;
+  }
+
+  .login-subtitle {
+    font-family: "Nunito", sans-serif;
+    font-size: 5vw;
+    padding-left: 35%;
+    padding-top: 7%;
+    display: inline-block;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .login-footer {
+    font-family: "Nunito", sans-serif;
+    font-size: 2vw;
+    padding-left: 29%;
+    padding-top: 70%;
+    padding-bottom: 3%;
+    display: inline-block;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #login {
+        margin: 0;
+      }
+  }
