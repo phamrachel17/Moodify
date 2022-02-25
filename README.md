@@ -27,8 +27,9 @@
 
  
  > ## Phase III
- ![image](https://user-images.githubusercontent.com/56899845/155667217-468b2216-b339-4ca2-8f10-6bb0018c8b64.png)
+![use case diagram p3](https://user-images.githubusercontent.com/56899845/155786095-9b7c6da4-2496-4feb-bbc6-7d394330bcf6.png)
  UPDATED UML DIAGRAM ABOVE
+
 
 We chose to use a structural design pattern, specifically the composite pattern as most of our implemented classes serve as the foundation for other sibling class attributes. The way the classes interact is mostly through inheritance and composition, so we figured behavioral and creational design patterns would not be appropriate. In our application, songs, artists, and genres are all separate classes that inherit from Panel, but they all contain instances of one another. There are many potential features that can use this, but for this application, displaying a song will return its title, artist and genre. Furthermore, we will use these attributes to generate the appropriate images to display. Although the MoodBoard class does not inherit from the Panel class, its display elements are all subclasses of Panel which makes displaying easier. As shown in our UML diagram, the mood board inherits information from the genre class.
  >     
