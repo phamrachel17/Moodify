@@ -27,10 +27,14 @@
 
  
  > ## Phase III
- 
+ ![image](https://user-images.githubusercontent.com/56899845/155667217-468b2216-b339-4ca2-8f10-6bb0018c8b64.png)
+ UPDATED UML DIAGRAM ABOVE
+
 We chose to use a structural design pattern, specifically composite patterns as most of our implemented classes serve as the foundation for other sibling class attributes. The way the classes interact is mostly through inheritance and composition, so we figured behavioral and creational design patterns would not be appropriate. In our application, songs, artists, and genres are all separate classes that inherit from Panel, but they all contain instances of one another. There are many potential features that can use this, but for this application, displaying a song will return its title, artist and genre. We may implement a feature that displays an artist’s top songs if we have time. Although the MoodBoard class does not inherit from the Panel class, its display elements are all subclasses of Panel which makes displaying easier.
  >     
 Although we’re not sure if this is necessary, we may implement a behavioral design (strategy design pattern) for creating common Panel functions that need to be altered slightly to fit each subclass. For example, a strategy pattern can be used on a display function, as displaying a song will show its title, artist and genre, but displaying an artist will only show their name and not their songs or any other attributes.
+
+Another design pattern that we implemented is a use case behavioral uml diagram. We chose to use this diagram to help us understand our workflow to show how different objects interact with each other; for example, the login button leads to the Spotify Authentication page which ultimately gives us the ability to gather the user's information. This uml diagram helped us to differentiate between the objects throughout the various pages. Doing this diagram made working with the API simple and concise since we can see a clear connection between the API we use and the objects.
 
 
 > During the meeting with your reader you will discuss: 
