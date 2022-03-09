@@ -11,11 +11,65 @@ body {
     background-attachment: fixed;
     background-image: linear-gradient(#1DB954,#ffffff);
   }
-  
+ 
+  /* Page 1 */
   h1 {
     color: rgb(255, 255, 255);
     font-size: 100px;
     font-family: "Hubballi", sans-serif;
     margin: auto;
     text-align: center;
+    padding-top: 30px;
   }
+
+  footer {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: "Hubballi", sans-serif;
+    margin: auto;
+    text-align: center;
+    padding-top: 400px;
+  }
+
+.button {
+    color: rgb(255, 255, 255);
+    background-color: rgba(58, 57, 57, 0.644);
+    box-shadow: rgba(18, 99, 42, 0.678) 0 15px 30px -5px;
+    box-sizing: border-box;
+    font-size: 35px;
+    font-family: "Hubballi", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border: #ffffff;
+    border-radius: 100px;
+    padding-top: 25px;
+    display: inline-block;
+    height:100px; 
+    width:400px; 
+    margin: -10px -50px; 
+    position:fixed;
+    top:40%; 
+    left:39%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Page 2 */
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 75px;
+    font-family: "Hubballi", sans-serif;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h3 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: "Hubballi", sans-serif;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+  }
+
