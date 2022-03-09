@@ -19,7 +19,7 @@ body {
     font-family: "Hubballi", sans-serif;
     margin: auto;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
   }
 
   footer {
@@ -28,7 +28,7 @@ body {
     font-family: "Hubballi", sans-serif;
     margin: auto;
     text-align: center;
-    padding-top: 400px;
+    padding-top: 270px;
   }
 
 .button {
@@ -47,11 +47,15 @@ body {
     height:100px; 
     width:400px; 
     margin: -10px -50px; 
-    position:fixed;
     top:40%; 
-    left:39%;
+    left:35%;
     justify-content: center;
-    align-items: center;
+}
+
+.button-container {
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
 }
 
 /* Page 2 */
