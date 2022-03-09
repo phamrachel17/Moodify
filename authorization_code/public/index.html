@@ -16,7 +16,6 @@
     </style>
   </head>
 
-
   <body>
     <div class="container">
       <div id="login">
@@ -26,6 +25,10 @@
       <div id="loggedin">
         <div id="user-profile">
         </div>
+        <div id="user-topArtists">
+        </div>
+        <div id="user-topSongs">
+        </div>
         <div id="oauth">
         </div>
         <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
@@ -33,7 +36,7 @@
     </div>
 
     <script id="user-profile-template" type="text/x-handlebars-template">
-      <h1>Welcome to Moodify, {{display_name}}!</h1>
+      <h1>Welcome to Moodify, {{display_name}}</h1>
       <div class="media">
         <div class="pull-left">
           <img class="media-object" width="150" src="{{images.0.url}}" />
@@ -41,21 +44,67 @@
         <div class="media-body">
           <dl class="dl-horizontal">
             <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
-            <dt>Username</dt><dd>{{id}}</dd>
+            <dt>Id</dt><dd>{{id}}</dd>
             <dt>Email</dt><dd>{{email}}</dd>
             <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>
             <dt>Link</dt><dd><a href="{{href}}">{{href}}</a></dd>
             <dt>Profile Image</dt><dd class="clearfix"><a href="{{images.0.url}}">{{images.0.url}}</a></dd>
-            <dt>Country</dt><dd>{{country}}</dd>
-        <h3>User's Items:</h3>
-            <dt>Top Artists</dt><dd>{{country}}</dd>
-            <dt>Top Songs</dt><dd>{{country}}</dd>
-            <dt>Listen Time</dt><dd>{{listentime}}</dd>
-            <dt>Top Genres</dt><dd>{{listentime}}</dd>
+            <dt>Country</dt><dd>{{country}}</dd> 
           </dl>
         </div>
       </div>
     </script>
+
+    <script id="user-topArtists-template" type="text/x-handlebars-template">
+      <h1>Top Artists</h1>
+      <div class="media">
+        <div class="pull-right">
+          <img class="media-object" width="150" src="{{items.0.images.0.url}}" />
+        </div>
+        <div class="media-body">
+          <dl class="dl-horizontal">
+            <dt>Top 1</dt><dd>{{items.0.name}}</dd>
+            <dt>Top 2</dt><dd>{{items.1.name}}</dd>
+            <dt>Top 3</dt><dd>{{items.2.name}}</dd>
+            <dt>Top 4</dt><dd>{{items.3.name}}</dd>
+            <dt>Top 5</dt><dd>{{items.4.name}}</dd>
+          </dl>
+        </div>
+      </div>
+      <h1>Top Genres</h1>
+      <div class="media">
+        <div class="media-body">
+          <dl class="dl-horizontal">
+            <dt>Top 1</dt><dd>{{items.0.genres}}</dd>
+            <dt>Top 2</dt><dd>{{items.1.genres}}</dd>
+            <dt>Top 3</dt><dd>{{items.2.genres}}</dd>
+            <dt>Top 4</dt><dd>{{items.3.genres}}</dd>
+            <dt>Top 5</dt><dd>{{items.4.genres}}</dd>
+          </dl>
+        </div>
+      </div>
+    </script>
+
+    <script id="user-topSongs-template" type="text/x-handlebars-template">
+      <h1>Top Songs</h1>
+      <div class="media">
+        <div class="pull-right">
+          <img class="media-object" width="150" src="{{items.0.album.images.0.url}}" />
+        </div>
+        <div class="media-body">
+          <dl class="dl-horizontal">
+            <dt>Top 1</dt><dd>{{items.0.name}} by {{items.0.artists.0.name}}</dd>
+            <dt>Top 2</dt><dd>{{items.1.name}} by {{items.1.artists.0.name}}</dd>
+            <dt>Top 3</dt><dd>{{items.2.name}} by {{items.2.artists.0.name}}</dd>
+            <dt>Top 4</dt><dd>{{items.3.name}} by {{items.3.artists.0.name}}</dd>
+            <dt>Top 5</dt><dd>{{items.4.name}} by {{items.4.artists.0.name}}</dd>
+          </dl>
+        </div>
+      </div>
+    </script>
+
+    
+    
 
     <script id="oauth-template" type="text/x-handlebars-template">
       <h2>oAuth info</h2>
@@ -88,6 +137,14 @@
             userProfileTemplate = Handlebars.compile(userProfileSource),
             userProfilePlaceholder = document.getElementById('user-profile');
 
+        var userTopArtists = document.getElementById('user-topArtists-template').innerHTML,
+            userTopArtistsTemplate = Handlebars.compile(userTopArtists),
+            userTopArtistsPlaceholder = document.getElementById('user-topArtists');
+
+        var userTopSongs = document.getElementById('user-topSongs-template').innerHTML,
+            userTopSongsTemplate = Handlebars.compile(userTopSongs),
+            userTopSongsPlaceholder = document.getElementById('user-topSongs');
+
         var oauthSource = document.getElementById('oauth-template').innerHTML,
             oauthTemplate = Handlebars.compile(oauthSource),
             oauthPlaceholder = document.getElementById('oauth');
@@ -115,6 +172,30 @@
                 },
                 success: function(response) {
                   userProfilePlaceholder.innerHTML = userProfileTemplate(response);
+
+                  $('#login').hide();
+                  $('#loggedin').show();
+                }
+            });
+            $.ajax({
+                url: 'https://api.spotify.com/v1/me/top/artists?time_range=short_term&limit=5',
+                headers: {
+                  'Authorization': 'Bearer ' + access_token
+                },
+                success: function(response) {
+                  userTopArtistsPlaceholder.innerHTML = userTopArtistsTemplate(response);
+
+                  $('#login').hide();
+                  $('#loggedin').show();
+                }
+            });
+            $.ajax({
+                url: 'https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=5',
+                headers: {
+                  'Authorization': 'Bearer ' + access_token
+                },
+                success: function(response) {
+                  userTopSongsPlaceholder.innerHTML = userTopSongsTemplate(response);
 
                   $('#login').hide();
                   $('#loggedin').show();
