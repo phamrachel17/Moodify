@@ -17,12 +17,13 @@ var client_id = 'f4243bb0b60348c4a1dfc2e0e3c2be2a'; // Your client id
 var client_secret = 'e4f416291d2e46a894281977b6cc86f7'; // Your secret
 var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 
+
 /**
  * Generates a random string containing numbers and letters
  * @param  {number} length The length of the string
  * @return {string} The generated string
  */
-var generateRandomString = function(length) {
+ var generateRandomString = function(length) {
   var text = '';
   var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
@@ -45,9 +46,8 @@ app.get('/login', function(req, res) {
   var state = generateRandomString(16);
   res.cookie(stateKey, state);
 
-  // FIRST CALL: /authorize
   // your application requests authorization
-  var scope = 'user-read-private user-read-email';
+  var scope = 'user-read-private user-read-email user-top-read';
   res.redirect('https://accounts.spotify.com/authorize?' +
     querystring.stringify({
       response_type: 'code',
@@ -62,7 +62,6 @@ app.get('/callback', function(req, res) {
 
   // your application requests refresh and access tokens
   // after checking the state parameter
-  // SECOND CALL: /api/token
 
   var code = req.query.code || null;
   var state = req.query.state || null;
@@ -95,13 +94,20 @@ app.get('/callback', function(req, res) {
             refresh_token = body.refresh_token;
 
         var options = {
-          url: 'https://api.spotify.com/v1/me',
+          url: 'https://api.spotify.com/v1/me/',
           headers: { 'Authorization': 'Bearer ' + access_token },
           json: true
         };
-
+        var topArtists = {
+          url: 'https://api.spotify.com/v1/me/top/artists?time_range=short_term&limit=5',
+          headers: { 'Authorization': 'Bearer ' + access_token },
+          json: true
+        };
         // use the access token to access the Spotify Web API
         request.get(options, function(error, response, body) {
+          console.log(body);
+        });
+        request.get(topArtists, function(error, response, body) {
           console.log(body);
         });
 
@@ -124,8 +130,6 @@ app.get('/callback', function(req, res) {
 app.get('/refresh_token', function(req, res) {
 
   // requesting access token from refresh token
-  // THIRD CALL: /refresh_token
-  
   var refresh_token = req.query.refresh_token;
   var authOptions = {
     url: 'https://accounts.spotify.com/api/token',
