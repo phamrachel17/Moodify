@@ -26,8 +26,6 @@ class Login extends React.Component {
                 <div className="login-subtitle">What is your mood today?</div>
                 <div class="centered"><RegisterButton/></div>
                 
-                
-                
                 <div className="login-footer">Made By: Rachel Pham, Adrian Khor, Harchet Singh, and Gency Dela Torre</div>
             </div>
         );
