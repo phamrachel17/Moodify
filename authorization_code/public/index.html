@@ -95,12 +95,14 @@
 
       <h3>MOODBOARD</h3>
       <div class="border">
-      <img class="moodboard" style="overflow:auto" width="700" src= "../images/happy/happy1.jpg" />
+
+      <img class="moodboard" style="overflow:auto" width="700" src= "../images/moadboard/moadboard.jpg" />
       </div>
       
     </script>
 
     
+
     
 
     <script id="oauth-template" type="text/x-handlebars-template">
@@ -194,8 +196,7 @@
                   'Authorization': 'Bearer ' + access_token
                 },
                 success: function(response) {
-                  userTopSongsPlaceholder.innerHTML = userTopSongsTemplate(response);
-
+                  userTopSongsPlaceholder.innerHTML = userTopSongsTemplate(response);          
                   $('#login').hide();
                   $('#loggedin').show();
                 }
