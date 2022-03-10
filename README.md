@@ -44,13 +44,13 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- ![image](https://user-images.githubusercontent.com/56899845/157714288-eb30b770-624b-41d5-beb1-afd5b63b0791.png)
- ![image](https://user-images.githubusercontent.com/56899845/157714382-080b5838-6d8a-4973-840a-6a2542dfd03c.png)
-![image](https://user-images.githubusercontent.com/56899845/157714973-6b313796-ceab-4949-9f7f-5e05216bf827.png)
-![image](https://user-images.githubusercontent.com/56899845/157715034-6c13c0a8-4fd1-4b7d-bdbe-ecc4e206f8eb.png)
+<img width="700" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720511-f5c9c350-c3b6-4994-959a-44e2b77ebfcf.png">
+<img width="700" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720568-07cc7715-bdc9-4629-856b-12e100ef26b0.jpeg">
+<img width="700" alt="F29A5C46-42BE-4820-A897-34E585FFBCC3" src="https://user-images.githubusercontent.com/66144804/157721067-c44438ba-d6f5-4c02-aaf5-4968479f5936.png">
+<img width="700" alt="D22DBCEE-33FF-430D-9384-7CE06139E5F3" src="https://user-images.githubusercontent.com/66144804/157721085-045f16d0-dc30-4ece-b689-ed41133f1127.png">
+<img width="700" alt="E7F7ECCF-9A0B-47D7-9ADA-6D995770B48E" src="https://user-images.githubusercontent.com/66144804/157721100-e3285b3e-de0a-44d3-b946-502cf7c7a64c.png">
 
-<img width="1440" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720511-f5c9c350-c3b6-4994-959a-44e2b77ebfcf.png">
-<img width="1440" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720568-07cc7715-bdc9-4629-856b-12e100ef26b0.jpeg">
+
 
  ## Installation/Usage
 
@@ -63,7 +63,8 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  > view Moodboard <br> 
  ## Testing
  > The project was validated through google test unit testing. <br> 
- > <img src="https://user-images.githubusercontent.com/66144804/157714929-fe89e458-bedf-4db6-897f-08fe2bc4a41c.gif" width="400" />
+ > <img width="600" alt="7B61ADA4-4A46-4E69-8700-6C34C48D4C18" src="https://user-images.githubusercontent.com/66144804/157721267-bc300e91-fd78-4124-b9a7-d5ca3c56ee11.png">
+ > <img src="https://user-images.githubusercontent.com/66144804/157714929-fe89e458-bedf-4db6-897f-08fe2bc4a41c.gif" width="600" />
  > 
 
  
