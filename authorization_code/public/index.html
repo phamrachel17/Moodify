@@ -18,6 +18,40 @@
 
   <body>
     <div class="container">
+      <div>
+        <style>
+          .tooltip {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            /*background-color: black;*/
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+          
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+          }
+          
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
+          }
+          .size_of_img{
+          width:90px}
+          </style>
+          
+          <body style="text-align:center;">
+          
+          <div class="tooltip"><img class="size_of_img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNIDI1IDIgQyAxMi4zMDkyOTUgMiAyIDEyLjMwOTI5NSAyIDI1IEMgMiAzNy42OTA3MDUgMTIuMzA5Mjk1IDQ4IDI1IDQ4IEMgMzcuNjkwNzA1IDQ4IDQ4IDM3LjY5MDcwNSA0OCAyNSBDIDQ4IDEyLjMwOTI5NSAzNy42OTA3MDUgMiAyNSAyIHogTSAyNSA0IEMgMzYuNjA5ODI0IDQgNDYgMTMuMzkwMTc2IDQ2IDI1IEMgNDYgMzYuNjA5ODI0IDM2LjYwOTgyNCA0NiAyNSA0NiBDIDEzLjM5MDE3NiA0NiA0IDM2LjYwOTgyNCA0IDI1IEMgNCAxMy4zOTAxNzYgMTMuMzkwMTc2IDQgMjUgNCB6IE0gMjUgMTEgQSAzIDMgMCAwIDAgMjIgMTQgQSAzIDMgMCAwIDAgMjUgMTcgQSAzIDMgMCAwIDAgMjggMTQgQSAzIDMgMCAwIDAgMjUgMTEgeiBNIDIxIDIxIEwgMjEgMjMgTCAyMiAyMyBMIDIzIDIzIEwgMjMgMzYgTCAyMiAzNiBMIDIxIDM2IEwgMjEgMzggTCAyMiAzOCBMIDIzIDM4IEwgMjcgMzggTCAyOCAzOCBMIDI5IDM4IEwgMjkgMzYgTCAyOCAzNiBMIDI3IDM2IEwgMjcgMjEgTCAyNiAyMSBMIDIyIDIxIEwgMjEgMjEgeiI+PC9wYXRoPjwvc3ZnPg==" alt="Image 1" /><span class="tooltiptext">Moodify allows a Spotify user to view their top Artists, Genres, and Songs. Utilizing the Spotify API, our website also helps user's visualize their taste in music by providing a moodboad based on preferences.  </span></div>
+                    
+          </body>
+      </div>
       <div id="login">
         <h1>Moodify</h1>
         <div class="button-container">
@@ -98,6 +132,7 @@
 
       <img class="moodboard" style="overflow:auto" width="700" src= "../images/moadboard/moadboard.jpg" />
       </div>
+
       
     </script>
 
