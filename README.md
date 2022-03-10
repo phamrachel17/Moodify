@@ -49,7 +49,11 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
 ![image](https://user-images.githubusercontent.com/56899845/157714973-6b313796-ceab-4949-9f7f-5e05216bf827.png)
 ![image](https://user-images.githubusercontent.com/56899845/157715034-6c13c0a8-4fd1-4b7d-bdbe-ecc4e206f8eb.png)
 
+<img width="1440" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720511-f5c9c350-c3b6-4994-959a-44e2b77ebfcf.png">
+<img width="1440" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720568-07cc7715-bdc9-4629-856b-12e100ef26b0.jpeg">
+
  ## Installation/Usage
+
  > To run app: <br> 
  > cd authorization_code <br> 
  > node app.js <br> 
