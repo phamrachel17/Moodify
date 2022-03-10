@@ -103,6 +103,12 @@ app.get('/callback', function(req, res) {
           headers: { 'Authorization': 'Bearer ' + access_token },
           json: true
         };
+
+        var topTracks = {
+          url: 'https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=5',
+          headers: { 'Authorization': 'Bearer ' + access_token },
+          json: true
+        }
         // use the access token to access the Spotify Web API
         request.get(options, function(error, response, body) {
           console.log(body);
@@ -122,6 +128,18 @@ app.get('/callback', function(req, res) {
           const fs1 = require('fs');
           let dataArtists = JSON.stringify(topArtistsObj);
           fs1.writeFileSync('topArtists.json', dataArtists);
+        });
+
+        request.get(topTracks, function(error, response, body) {
+          var topSongs = [];
+          
+          for (let i = 0; i < 5; i++) {
+            topSongs.push(body['items'][i]['name'] + '|' + body['items'][i]['artists'][0]['name']);
+          }
+
+          const fs2 = require('fs');
+          let dataSongs = JSON.stringify(topSongs);
+          fs2.writeFileSync('topSongs.json', dataSongs);
         });
 
         // we can also pass the token to the browser to make requests from there
