@@ -21,6 +21,7 @@
  
  > ## Phase II
 
+
 ## Class Diagram
  > ![image](https://user-images.githubusercontent.com/97139147/153347192-5a64b9bc-c3e1-4d72-ad86-c8c24ed4cd5b.png)
  > The picture above depicts our UML diagram for the project. We will have separate classes for each panel of the Spotify statistics which all inherit from the original Panel class. Then, the MoodBoard class takes information from the most listened genre and uses that to generate a collage of pictures.
@@ -28,8 +29,8 @@
  
  > ## Phase III
 ![use case diagram p3](https://user-images.githubusercontent.com/56899845/155786095-9b7c6da4-2496-4feb-bbc6-7d394330bcf6.png)
+![use case diagram p4](https://user-images.githubusercontent.com/66144804/157721817-76a30d59-5c5e-4ff2-a44d-7573fe9c5c7a.png)
  UPDATED UML DIAGRAM ABOVE
-
 
 We chose to use a structural design pattern, specifically the composite pattern as most of our implemented classes serve as the foundation for other sibling class attributes. The way the classes interact is mostly through inheritance and composition, so we figured behavioral and creational design patterns would not be appropriate. In our application, songs, artists, and genres are all separate classes that inherit from Panel, but they all contain instances of one another. There are many potential features that can use this, but for this application, displaying a song will return its title, artist and genre. Furthermore, we will use these attributes to generate the appropriate images to display. Although the MoodBoard class does not inherit from the Panel class, its display elements are all subclasses of Panel which makes displaying easier. As shown in our UML diagram, the mood board inherits information from the genre class.
  >     
@@ -37,18 +38,13 @@ We chose to use a structural design pattern, specifically the composite pattern 
 Another design pattern that we implemented is a use case behavioral UML diagram. We chose to use this diagram to help us understand our workflow to show how different objects interact with each other; for example, the login button leads to the Spotify Authentication page which ultimately gives us the ability to gather the user's information. This UML diagram helped us to differentiate between the objects throughout the various pages. Doing this diagram made working with the API simple and concise since we can see a clear connection between the API we use and the objects. Therefore, it will help us write code that is easier for the a person to understand the workflow. 
  
  > ## Final deliverable
- > All group members will give a demo to the TA/reader during lab time. The TA/reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
-<img width="700" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720511-f5c9c350-c3b6-4994-959a-44e2b77ebfcf.png">
-<img width="700" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720568-07cc7715-bdc9-4629-856b-12e100ef26b0.jpeg">
-<img width="700" alt="F29A5C46-42BE-4820-A897-34E585FFBCC3" src="https://user-images.githubusercontent.com/66144804/157721067-c44438ba-d6f5-4c02-aaf5-4968479f5936.png">
-<img width="700" alt="D22DBCEE-33FF-430D-9384-7CE06139E5F3" src="https://user-images.githubusercontent.com/66144804/157721085-045f16d0-dc30-4ece-b689-ed41133f1127.png">
-<img width="700" alt="E7F7ECCF-9A0B-47D7-9ADA-6D995770B48E" src="https://user-images.githubusercontent.com/66144804/157721100-e3285b3e-de0a-44d3-b946-502cf7c7a64c.png">
+<img width="600" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720511-f5c9c350-c3b6-4994-959a-44e2b77ebfcf.png">
+<img width="600" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720568-07cc7715-bdc9-4629-856b-12e100ef26b0.jpeg">
+<img width="600" alt="F29A5C46-42BE-4820-A897-34E585FFBCC3" src="https://user-images.githubusercontent.com/66144804/157721067-c44438ba-d6f5-4c02-aaf5-4968479f5936.png">
+<img width="600" alt="D22DBCEE-33FF-430D-9384-7CE06139E5F3" src="https://user-images.githubusercontent.com/66144804/157721085-045f16d0-dc30-4ece-b689-ed41133f1127.png">
+<img width="600" alt="E7F7ECCF-9A0B-47D7-9ADA-6D995770B48E" src="https://user-images.githubusercontent.com/66144804/157721100-e3285b3e-de0a-44d3-b946-502cf7c7a64c.png">
 
 
 
