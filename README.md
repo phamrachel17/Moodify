@@ -46,7 +46,9 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > To use Spotify Login Button, you need to run npm install --save styled-components
+ > To run app:
+ > cd moodify_code
+ > node app.js
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
