@@ -44,7 +44,11 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ ![image](https://user-images.githubusercontent.com/56899845/157714288-eb30b770-624b-41d5-beb1-afd5b63b0791.png)
+ ![image](https://user-images.githubusercontent.com/56899845/157714382-080b5838-6d8a-4973-840a-6a2542dfd03c.png)
+![image](https://user-images.githubusercontent.com/56899845/157714973-6b313796-ceab-4949-9f7f-5e05216bf827.png)
+![image](https://user-images.githubusercontent.com/56899845/157715034-6c13c0a8-4fd1-4b7d-bdbe-ecc4e206f8eb.png)
+
  ## Installation/Usage
  > To run app: <br> 
  > cd authorization_code <br> 
