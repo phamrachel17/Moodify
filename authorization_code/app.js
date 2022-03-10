@@ -108,7 +108,20 @@ app.get('/callback', function(req, res) {
           console.log(body);
         });
         request.get(topArtists, function(error, response, body) {
-          console.log(body);
+          // console.log(body);
+          const fs = require('fs');
+          let data = JSON.stringify(body['items'][0]['genres']);
+          fs.writeFileSync('topGenres.json', data);
+
+          var topArtistsObj = [];
+          
+          for (let i = 0; i < 5; i++) {
+            topArtistsObj.push(body['items'][i]['name']);
+          }
+
+          const fs1 = require('fs');
+          let dataArtists = JSON.stringify(topArtistsObj);
+          fs1.writeFileSync('topArtists.json', dataArtists);
         });
 
         // we can also pass the token to the browser to make requests from there
