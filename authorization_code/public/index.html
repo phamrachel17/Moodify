@@ -31,6 +31,8 @@
         </div>
         <div id="user-topArtists">
         </div>
+        <div id="user-topGenres">
+        </div>
         <div id="user-topSongs">
         </div>
         <div id="oauth">
@@ -41,69 +43,57 @@
 
     <script id="user-profile-template" type="text/x-handlebars-template">
       <h2>Welcome to Moodify, {{display_name}}</h2>
-      <div class="media">
-        <div class="pull-left">
-          <img class="media-object" width="150" src="{{images.0.url}}" />
-        </div>
-        <div class="media-body">
-          <dl class="dl-horizontal">
-            <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
-            <dt>Id</dt><dd>{{id}}</dd>
-            <dt>Email</dt><dd>{{email}}</dd>
-            <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>
-            <dt>Link</dt><dd><a href="{{href}}">{{href}}</a></dd>
-            <dt>Profile Image</dt><dd class="clearfix"><a href="{{images.0.url}}">{{images.0.url}}</a></dd>
-            <dt>Country</dt><dd>{{country}}</dd> 
-          </dl>
-        </div>
-      </div>
+      <a href="{{external_urls.spotify}}"><img class="prof-pic" width="200" src="{{images.0.url}}" /></a>
     </script>
 
     <script id="user-topArtists-template" type="text/x-handlebars-template">
       <h3>Top Artists</h3>
-      <div class="media">
-        <div class="pull-right">
-          <img class="media-object" width="150" src="{{items.0.images.0.url}}" />
-        </div>
-        <div class="media-body">
-          <dl class="dl-horizontal">
-            <dt>Top 1</dt><dd>{{items.0.name}}</dd>
-            <dt>Top 2</dt><dd>{{items.1.name}}</dd>
-            <dt>Top 3</dt><dd>{{items.2.name}}</dd>
-            <dt>Top 4</dt><dd>{{items.3.name}}</dd>
-            <dt>Top 5</dt><dd>{{items.4.name}}</dd>
-          </dl>
+      <div class="border">
+          <img class="pic" style="overflow:auto" width="150" src="{{items.0.images.0.url}}" />
+        <div class="border2">
+        <div class="info">
+            <ol>
+            <li>{{items.0.name}}</li>
+            <li>{{items.1.name}}</li>
+            <li>{{items.2.name}}</li>
+            <li>{{items.3.name}}</li>
+            <li>{{items.4.name}}</li>
+          </ol>
         </div>
       </div>
+      </div>
+
       <h3>Top Genres</h3>
-      <div class="media">
-        <div class="media-body">
-          <dl class="dl-horizontal">
-            <dt>Top 1</dt><dd>{{items.0.genres}}</dd>
-            <dt>Top 2</dt><dd>{{items.1.genres}}</dd>
-            <dt>Top 3</dt><dd>{{items.2.genres}}</dd>
-            <dt>Top 4</dt><dd>{{items.3.genres}}</dd>
-            <dt>Top 5</dt><dd>{{items.4.genres}}</dd>
-          </dl>
+      <div class="border">
+        <div class="border2">
+        <div class="info">
+            <ol>
+            <li>{{items.0.genres}}</li>
+            <li>{{items.1.genres}}</li>
+            <li>{{items.2.genres}}</li>
+            <li>{{items.3.genres}}</li>
+            <li>{{items.4.genres}}</li>
+          </ol>
         </div>
+      </div>
       </div>
     </script>
 
     <script id="user-topSongs-template" type="text/x-handlebars-template">
       <h3>Top Songs</h3>
-      <div class="media">
-        <div class="pull-right">
-          <img class="media-object" width="150" src="{{items.0.album.images.0.url}}" />
+      <div class="border">
+          <img class="pic" style="overflow:auto" width="150" src="{{items.0.album.images.0.url}}" />
+        <div class="border2">
+        <div class="info">
+            <ol>
+            <li>{{items.0.name}} by {{items.0.artists.0.name}}</li>
+            <li>{{items.1.name}} by {{items.1.artists.0.name}}</li>
+            <li>{{items.2.name}} by {{items.2.artists.0.name}}</li>
+            <li>{{items.3.name}} by {{items.3.artists.0.name}}</li>
+            <li>{{items.4.name}} by {{items.4.artists.0.name}}</li>
+          </ol>
         </div>
-        <div class="media-body">
-          <dl class="dl-horizontal">
-            <dt>Top 1</dt><dd>{{items.0.name}} by {{items.0.artists.0.name}}</dd>
-            <dt>Top 2</dt><dd>{{items.1.name}} by {{items.1.artists.0.name}}</dd>
-            <dt>Top 3</dt><dd>{{items.2.name}} by {{items.2.artists.0.name}}</dd>
-            <dt>Top 4</dt><dd>{{items.3.name}} by {{items.3.artists.0.name}}</dd>
-            <dt>Top 5</dt><dd>{{items.4.name}} by {{items.4.artists.0.name}}</dd>
-          </dl>
-        </div>
+      </div>
       </div>
     </script>
 
@@ -112,7 +102,7 @@
 
     <script id="oauth-template" type="text/x-handlebars-template">
       <h3>oAuth info</h3>
-      <dl class="dl-horizontal">
+      <dl class="info">
         <dt>Access token</dt><dd class="text-overflow">{{access_token}}</dd>
         <dt>Refresh token</dt><dd class="text-overflow">{{refresh_token}}</dd>
       </dl>
@@ -231,3 +221,23 @@
   </body>
 </html>
 
+
+
+<!-- <script id="user-profile-template" type="text/x-handlebars-template">
+  <h2>Welcome to Moodify, {{display_name}}</h2>
+  <img class="prof-pic" width="200" src="{{images.0.url}}" />
+  <div class="user-block">
+    <div class="user-profile-left">
+        <ul>
+        <h4><li>Display name</li></h4><dd class="clearfix">{{display_name}}</dd>
+        <h4><li>Spotify Id</li></h4><dd>{{id}}</dd>
+        </ul>
+      </div>
+    <div class="user-profile-right">
+      <ul>
+        <h4><li>Your Spotify Link</li></h4><dd><a href="{{external_urls.spotify}}">{{display_name}}'s Link</a></dd>
+        <h4><li>Country</li></h4><dd>{{country}}</dd> 
+      </ul>
+    </div>
+  </div>
+</script> -->

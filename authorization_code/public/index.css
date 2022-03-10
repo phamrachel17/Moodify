@@ -77,3 +77,71 @@ h2 {
     padding-top: 30px;
   }
 
+  h4 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: "Hubballi", sans-serif;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+
+  .border {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+
+  .border2 {
+    border-radius: 25px;
+    border: 2px solid #032c09;
+    width: 100%;
+    height: 100%;
+  }
+
+  .info {
+    font-family: "Hubballi", sans-serif;
+    font-size: 25px;
+    padding-left: 40px;
+    text-align: justify;
+  }
+
+  img.prof-pic {
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  img.pic {
+    float: right;
+    padding-left: 50px;
+    padding-right: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+
+
+
+  /* .user-block {
+    padding-top: 30px;
+    padding-bottom: 200px;
+    width: 100%;
+  }
+
+  .user-profile-right {
+    font-family: "Hubballi", sans-serif;
+    float: right;
+    font-size: 25px;
+    padding-right: 70px;
+  }
+
+  .user-profile-left {
+    font-family: "Hubballi", sans-serif;
+    float: left;
+    font-size: 25px;
+    padding-left: 20px;
+  } */
