@@ -5,7 +5,11 @@ SET(CMAKE_CXX_STANDARD 11)
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(test
-    moodboard.cpp
+    unit_test.cpp
+)
+
+ADD_EXECUTABLE(main
+    main.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
