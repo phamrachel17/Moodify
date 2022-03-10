@@ -95,17 +95,22 @@
         </div>
       </div>
       </div>
+
+      <h3>MOODBOARD</h3>
+      <div class="border">
+      <img class="pic" style="overflow:auto" width="150" src= "../images/happy/happy1.jpg" />
+      </div>
     </script>
 
     
     
 
     <script id="oauth-template" type="text/x-handlebars-template">
-      <h3>oAuth info</h3>
+      <!--<h3>oAuth info</h3>
       <dl class="info">
         <dt>Access token</dt><dd class="text-overflow">{{access_token}}</dd>
         <dt>Refresh token</dt><dd class="text-overflow">{{refresh_token}}</dd>
-      </dl>
+      </dl>-->
     </script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
@@ -126,6 +131,8 @@
           }
           return hashParams;
         }
+
+
 
         var userProfileSource = document.getElementById('user-profile-template').innerHTML,
             userProfileTemplate = Handlebars.compile(userProfileSource),
