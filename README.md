@@ -46,8 +46,8 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > To run app:
- > cd moodify
+ > To run app: <br> 
+ > cd authorization_code <br> 
  > node app.js
  ## Testing
  > The project was validated through google test unit testing. <br> 
