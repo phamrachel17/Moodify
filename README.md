@@ -29,11 +29,11 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  > ## Final deliverable
  
  ## Screenshots
-<img width="600" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720511-f5c9c350-c3b6-4994-959a-44e2b77ebfcf.png">
-<img width="600" alt="72722434-166B-42F8-BEAA-6D4A579EAAB7" src="https://user-images.githubusercontent.com/66144804/157720568-07cc7715-bdc9-4629-856b-12e100ef26b0.jpeg">
-<img width="600" alt="F29A5C46-42BE-4820-A897-34E585FFBCC3" src="https://user-images.githubusercontent.com/66144804/157721067-c44438ba-d6f5-4c02-aaf5-4968479f5936.png">
-<img width="600" alt="D22DBCEE-33FF-430D-9384-7CE06139E5F3" src="https://user-images.githubusercontent.com/66144804/157721085-045f16d0-dc30-4ece-b689-ed41133f1127.png">
-<img width="600" alt="E7F7ECCF-9A0B-47D7-9ADA-6D995770B48E" src="https://user-images.githubusercontent.com/66144804/157721100-e3285b3e-de0a-44d3-b946-502cf7c7a64c.png">
+![image](https://user-images.githubusercontent.com/66144804/157720511-f5c9c350-c3b6-4994-959a-44e2b77ebfcf.png)
+![image](https://user-images.githubusercontent.com/66144804/157720568-07cc7715-bdc9-4629-856b-12e100ef26b0.jpeg)
+![image](https://user-images.githubusercontent.com/66144804/157721067-c44438ba-d6f5-4c02-aaf5-4968479f5936.png)
+![image](https://user-images.githubusercontent.com/66144804/157721085-045f16d0-dc30-4ece-b689-ed41133f1127.png)
+![image](https://user-images.githubusercontent.com/66144804/157721100-e3285b3e-de0a-44d3-b946-502cf7c7a64c.png)
 
 
  ## Installation/Usage
@@ -48,8 +48,8 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
 
  ## Testing
  > The project was validated through google test unit testing. <br> 
- > <img width="600" alt="7B61ADA4-4A46-4E69-8700-6C34C48D4C18" src="https://user-images.githubusercontent.com/66144804/157721267-bc300e91-fd78-4124-b9a7-d5ca3c56ee11.png">
- > <img src="https://user-images.githubusercontent.com/66144804/157714929-fe89e458-bedf-4db6-897f-08fe2bc4a41c.gif" width="600" />
+ > <img width="700" alt="7B61ADA4-4A46-4E69-8700-6C34C48D4C18" src="https://user-images.githubusercontent.com/66144804/157721267-bc300e91-fd78-4124-b9a7-d5ca3c56ee11.png">
+ > <img src="https://user-images.githubusercontent.com/66144804/157714929-fe89e458-bedf-4db6-897f-08fe2bc4a41c.gif" width="700" />
  > 
 
  
