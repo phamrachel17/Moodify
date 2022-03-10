@@ -102,6 +102,7 @@ h2 {
     font-family: "Hubballi", sans-serif;
     font-size: 25px;
     padding-left: 40px;
+    padding-right: 200px;
     text-align: justify;
   }
 
@@ -116,7 +117,7 @@ h2 {
   img.pic {
     float: right;
     padding-left: 50px;
-    padding-right: 150px;
+    padding-right: 80px;
     padding-top: 15px;
     padding-bottom: 15px;
     max-width: 70%;
