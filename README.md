@@ -50,5 +50,8 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  > cd moodify
  > node app.js
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ > The project was validated through google test unit testing.
+ > <img src="https://user-images.githubusercontent.com/66144804/157714929-fe89e458-bedf-4db6-897f-08fe2bc4a41c.gif" width="250" />
+ > 
+
  
