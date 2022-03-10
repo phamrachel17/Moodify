@@ -19,7 +19,7 @@ body {
     font-family: "Hubballi", sans-serif;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 90px;
   }
 
   footer {
@@ -132,25 +132,31 @@ h2 {
     margin-right: auto;
   }
 
-
-
-
-  /* .user-block {
-    padding-top: 30px;
-    padding-bottom: 200px;
-    width: 100%;
-  }
-
-  .user-profile-right {
-    font-family: "Hubballi", sans-serif;
-    float: right;
-    font-size: 25px;
-    padding-right: 70px;
-  }
-
-  .user-profile-left {
-    font-family: "Hubballi", sans-serif;
+  /* Info-Button CSS */
+  .tooltip {
     float: left;
-    font-size: 25px;
     padding-left: 20px;
-  } */
+    padding-top: 20px;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.253);
+    font-family: "Hubballi", sans-serif;
+    color: #fff;
+    /* text-align: center; */
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .size_of_img{
+  width:60px}
