@@ -50,8 +50,8 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  > cd moodify
  > node app.js
  ## Testing
- > The project was validated through google test unit testing.
- > <img src="https://user-images.githubusercontent.com/66144804/157714929-fe89e458-bedf-4db6-897f-08fe2bc4a41c.gif" width="250" />
+ > The project was validated through google test unit testing. <br> 
+ > <img src="https://user-images.githubusercontent.com/66144804/157714929-fe89e458-bedf-4db6-897f-08fe2bc4a41c.gif" width="400" />
  > 
 
  
