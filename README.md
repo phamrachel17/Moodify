@@ -2,17 +2,6 @@
  
  > Authors: \<[Harchet Singh](https://github.com/hsing067)\> \<[Gency Dela Torre](https://github.com/gen-cy)\> \<[Rachel Pham](https://github.com/phamrachel17)\> \<[Adrian Khor](https://github.com/akhor005)\>
  
- 
- > ## Expectations
- > * Incorporate **at least one** design pattern
- >   * It is recommended that you include a design pattern that we will teach this session (Composite, Strategy, or Visitor)
- > * Your project should be implemented in C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
- > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
- > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
- > * Each member of the group must actively participate in the Github Project board and reviewing commited code.
-> * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two scrum/check-in meetings with your lab TA/reader in two different weeks in addition to the final demo.
-
-
 ## Project Description
  > Our project will be a website that gathers data using API’s from your Spotify history to display data from Spotify wrapped and a mood/aesthetic board of pictures from Pinterest or Google. 
  >   * This project is interesting to us because Spotify wrapped is only released once per year and it would be useful to access it at any time. Furthermore, we want to add a mood/aesthetic board feature to the Spotify wrapped data which will allow us to express our feelings through music and images.
@@ -47,9 +36,7 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
 <img width="600" alt="E7F7ECCF-9A0B-47D7-9ADA-6D995770B48E" src="https://user-images.githubusercontent.com/66144804/157721100-e3285b3e-de0a-44d3-b946-502cf7c7a64c.png">
 
 
-
  ## Installation/Usage
-
  > To run app: <br> 
  > cd authorization_code <br> 
  > node app.js <br> 
@@ -57,6 +44,8 @@ Another design pattern that we implemented is a use case behavioral UML diagram.
  > run both cpp files <br> 
  > refresh the page <br> 
  > view Moodboard <br> 
+
+
  ## Testing
  > The project was validated through google test unit testing. <br> 
  > <img width="600" alt="7B61ADA4-4A46-4E69-8700-6C34C48D4C18" src="https://user-images.githubusercontent.com/66144804/157721267-bc300e91-fd78-4124-b9a7-d5ca3c56ee11.png">
