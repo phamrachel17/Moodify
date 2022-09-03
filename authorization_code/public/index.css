@@ -13,21 +13,16 @@ body {
   }
  
   /* Page 1 */
-  h1 {
+  #title {
     color: rgb(255, 255, 255);
     font-size: 100px;
     font-family: "Hubballi", sans-serif;
-    margin: auto;
-    text-align: center;
-    padding-top: 90px;
   }
 
   footer {
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 22px;
     font-family: "Hubballi", sans-serif;
-    margin: auto;
-    text-align: center;
     padding-top: 300px;
   }
 
@@ -63,8 +58,6 @@ h2 {
     color: rgb(255, 255, 255);
     font-size: 75px;
     font-family: "Hubballi", sans-serif;
-    margin: auto;
-    text-align: center;
     padding-top: 30px;
   }
 
@@ -89,6 +82,7 @@ h2 {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
+    border: transparent;
   }
 
   .border2 {
@@ -99,11 +93,10 @@ h2 {
     height: 100%;
   }
 
-  .info {
+  h5, .info {
     font-family: "Hubballi", sans-serif;
     font-size: 25px;
-    padding-left: 40px;
-    text-align: justify;
+    text-align: left;
   }
 
   img.prof-pic {

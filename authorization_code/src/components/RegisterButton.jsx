@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-
-
 const CLIENT_ID = "1bb612d16c3343a99adf682d0670d9ff";
 const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize";
 const REDIRECT_URL_AFTER_LOGIN = "http://localhost:3000/";
@@ -14,7 +11,6 @@ const SCOPES_URL_PARAM = SCOPES.join(SPACE_DELIMITER);
 
 const handleLogin = () =>{
     window.location = `${SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL_AFTER_LOGIN}&scope=${SCOPES_URL_PARAM}&response_type=token&show_dialogue=true`;
-   
 }
 
 const Button = styled.button`
@@ -31,8 +27,6 @@ const Button = styled.button`
     font-color: black;
     font-family: cousine;
     `
-
-
 
 export const RegisterButton = () => {
     return(
